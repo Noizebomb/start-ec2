@@ -20,6 +20,8 @@ jobs:
         run: sudo apt install docker -y
       - name: apt update
         run: sudo apt update -y
+      - name: download dockerfile
+        run: wget https://github.com/Noizebomb/webapp-docker-build/blob/main/Dockerfile
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
