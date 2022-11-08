@@ -18,3 +18,5 @@ jobs:
         run: sudo apt update -y
       - name: install docker
         run: sudo apt install docker -y
+      - name: pull docker repo
+	run: docker pull noizebomb/springboot-app-2:0.0.1
