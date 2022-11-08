@@ -1,8 +1,7 @@
 name: startMagent2DevEC2
-on:
-   push:
-   pull:
-   branches: [ main ]
+on: [push]
+    [pull]
+
   workflow_dispatch:
 jobs:
   build:
