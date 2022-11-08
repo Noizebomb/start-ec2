@@ -25,5 +25,5 @@ jobs:
       - name: give executable perm
         run: chmod +x Dockerfile
       - name: pull docker image
-        run: docker pull noizebomb/springboot-app-2
+        run: sudo docker pull noizebomb/springboot-app-2
   
