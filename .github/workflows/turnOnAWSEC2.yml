@@ -1,5 +1,5 @@
 name: startMagent2DevEC2
-on:
+on: [push]
  #push:
  #pull:
   workflow_dispatch:
