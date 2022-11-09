@@ -1,8 +1,6 @@
 name: startMagent2DevEC2
 on: [push]
- #push:
- #pull:
-  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
