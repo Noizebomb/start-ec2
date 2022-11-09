@@ -29,3 +29,5 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
       - name: pull docker image
         run: docker pull noizebomb/springboot-app-2:0.0.1
+      - name: run docker-compose
+        run: docker-compose up -d
