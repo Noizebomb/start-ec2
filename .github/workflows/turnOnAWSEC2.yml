@@ -16,6 +16,8 @@ jobs:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
       - name: update ec2 instance
         run: sudo apt update -y
+      - name: install python
+        run: sudo apt install -y python3.8
       - name: install docker
         run: sudo apt install docker -y
       - name: Checkout
