@@ -32,4 +32,4 @@ jobs:
       - name: pull docker-compose file
         run: wget https://github.com/Noizebomb/webapp-docker-build/blob/main/docker-compose.yml
       - name: run docker-compose
-        run: docker run -p 8080:8080 -d noizebomb/springboot-app-2:0.0.1
+        run: docker-compose up -d
