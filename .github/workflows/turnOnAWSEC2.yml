@@ -20,6 +20,6 @@ jobs:
         run: sudo apt install docker -y
       - name: docker login
         env:
-	  DOCKER_USER: ${{secrets.DOCKER_USER}}
-	  DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+	  DOCKER_USER: ${{secrets.DOCKER_HUB_USERNAME}}
+	  DOCKER_PASSWORD: ${{secrets.DOCKER_HUB_PASSWORD}}
 	run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
